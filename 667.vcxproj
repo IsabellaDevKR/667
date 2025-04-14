@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{af31f644-e571-44f3-9864-e82ddbc6db8c}</ProjectGuid>
+    <RootNamespace>667</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;IMGUI_ENABLE_FREETYPE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PrecompiledHeaderFile>common.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fmt.lib;DirectXTK.lib;freetype.lib;g3log.lib;minhook.x64.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/ignore:4099,4200 %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>common.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir)include;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>fmt.lib DirectXTK.lib freetype.lib g3log.lib minhook.x64.lib %(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="include\g3log\crashhandler_windows.cpp" />
+    <ClCompile Include="include\g3log\filesink.cpp" />
+    <ClCompile Include="include\g3log\g3log.cpp" />
+    <ClCompile Include="include\g3log\logcapture.cpp" />
+    <ClCompile Include="include\g3log\loglevels.cpp" />
+    <ClCompile Include="include\g3log\logmessage.cpp" />
+    <ClCompile Include="include\g3log\logworker.cpp" />
+    <ClCompile Include="include\g3log\stacktrace_windows.cpp" />
+    <ClCompile Include="include\g3log\time.cpp" />
+    <ClCompile Include="include\ImGui\imgui.cpp" />
+    <ClCompile Include="include\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="include\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="include\ImGui\imgui_freetype.cpp" />
+    <ClCompile Include="include\ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="include\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="include\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="include\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="src\common.cpp" />
+    <ClCompile Include="src\entry.cpp" />
+    <ClCompile Include="src\Features\Aimbot\aimbot.cpp" />
+    <ClCompile Include="src\Features\Anti AFK\anti_afk.cpp" />
+    <ClCompile Include="src\Features\Blacklist\blacklist.cpp" />
+    <ClCompile Include="src\Features\C4 Bot\c4_bot.cpp" />
+    <ClCompile Include="src\Features\Crosshair\crosshair.cpp" />
+    <ClCompile Include="src\Features\ESP\esp.cpp" />
+    <ClCompile Include="src\Features\Explosives\explosives.cpp" />
+    <ClCompile Include="src\Features\Friend List\friend_list.cpp" />
+    <ClCompile Include="src\Features\Health Bar\health_bar.cpp" />
+    <ClCompile Include="src\Features\Infantry Alert\infantry_alert.cpp" />
+    <ClCompile Include="src\Features\Jet Speed\jetspeed.cpp" />
+    <ClCompile Include="src\Features\Kill Sound\kill_sound.cpp" />
+    <ClCompile Include="src\Features\main.cpp" />
+    <ClCompile Include="src\Features\Minimap\minimap.cpp" />
+    <ClCompile Include="src\Features\Missiles\missiles.cpp" />
+    <ClCompile Include="src\Features\Name Spoofer\name_spoofer.cpp" />
+    <ClCompile Include="src\Features\Overheat\overheat.cpp" />
+    <ClCompile Include="src\Features\Radar\radar.cpp" />
+    <ClCompile Include="src\Features\Rainbow Mode\rainbow_mode.cpp" />
+    <ClCompile Include="src\Features\Refresh Hook\refresh_hook.cpp" />
+    <ClCompile Include="src\Features\Risky\risky.cpp" />
+    <ClCompile Include="src\Features\Screenshots\screenshots.cpp" />
+    <ClCompile Include="src\Features\Spectator List\spectators.cpp" />
+    <ClCompile Include="src\Features\Watermark\watermark.cpp" />
+    <ClCompile Include="src\Hooks\hooks.cpp" />
+    <ClCompile Include="src\Rendering\draw-list.cpp" />
+    <ClCompile Include="src\Rendering\gui.cpp" />
+    <ClCompile Include="src\Rendering\renderer.cpp" />
+    <ClCompile Include="src\SDK\class_info.cpp" />
+    <ClCompile Include="src\SDK\sdk.cpp" />
+    <ClCompile Include="src\SDK\type_info.cpp" />
+    <ClCompile Include="src\Utilities\math.cpp" />
+    <ClCompile Include="src\Utilities\other.cpp" />
+    <ClCompile Include="src\Utilities\path.cpp" />
+    <ClCompile Include="src\Utilities\quartic.cpp" />
+    <ClCompile Include="src\Utilities\texture_saver.cpp" />
+    <ClCompile Include="src\Utilities\thread_pool.cpp" />
+    <ClCompile Include="src\Utilities\vmt_hook.cpp" />
+    <ClCompile Include="src\Utilities\w2s.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\common.h" />
+    <ClInclude Include="src\Features\Aimbot\aimbot.h" />
+    <ClInclude Include="src\Features\Anti AFK\anti_afk.h" />
+    <ClInclude Include="src\Features\Blacklist\blacklist.h" />
+    <ClInclude Include="src\Features\C4 Bot\c4_bot.h" />
+    <ClInclude Include="src\Features\Crosshair\crosshair.h" />
+    <ClInclude Include="src\Features\ESP\esp.h" />
+    <ClInclude Include="src\Features\Explosives\explosives.h" />
+    <ClInclude Include="src\Features\Friend List\friend_list.h" />
+    <ClInclude Include="src\Features\Health Bar\health_bar.h" />
+    <ClInclude Include="src\Features\Infantry Alert\infantry_alert.h" />
+    <ClInclude Include="src\Features\Jet Speed\jetspeed.h" />
+    <ClInclude Include="src\Features\Kill Sound\kill_sound.h" />
+    <ClInclude Include="src\Features\main.h" />
+    <ClInclude Include="src\Features\Minimap\minimap.h" />
+    <ClInclude Include="src\Features\Missiles\missiles.h" />
+    <ClInclude Include="src\Features\Name Spoofer\name_spoofer.h" />
+    <ClInclude Include="src\Features\Overheat\overheat.h" />
+    <ClInclude Include="src\Features\Radar\radar.h" />
+    <ClInclude Include="src\Features\Rainbow Mode\rainbow_mode.h" />
+    <ClInclude Include="src\Features\Refresh Hook\refresh_hook.h" />
+    <ClInclude Include="src\Features\Risky\risky.h" />
+    <ClInclude Include="src\Features\Screenshots\screenshots.h" />
+    <ClInclude Include="src\Features\Spectator List\spectators.h" />
+    <ClInclude Include="src\Features\Watermark\watermark.h" />
+    <ClInclude Include="src\global.h" />
+    <ClInclude Include="src\Hooks\hooks.h" />
+    <ClInclude Include="src\logger.h" />
+    <ClInclude Include="src\Rendering\draw-list.h" />
+    <ClInclude Include="src\Rendering\font.h" />
+    <ClInclude Include="src\Rendering\gui.h" />
+    <ClInclude Include="src\Rendering\Maps\bone_manager.h" />
+    <ClInclude Include="src\Utilities\firing_data.h" />
+    <ClInclude Include="src\Utilities\key_map.h" />
+    <ClInclude Include="src\Rendering\Maps\nicknames.h" />
+    <ClInclude Include="src\Rendering\renderer.h" />
+    <ClInclude Include="src\Utilities\tooltip.h" />
+    <ClInclude Include="src\SDK\class_info.h" />
+    <ClInclude Include="src\SDK\sdk.h" />
+    <ClInclude Include="src\SDK\type_info.h" />
+    <ClInclude Include="src\settings.h" />
+    <ClInclude Include="src\Utilities\auto_yield.h" />
+    <ClInclude Include="src\Utilities\math.h" />
+    <ClInclude Include="src\Utilities\other.h" />
+    <ClInclude Include="src\Utilities\path.h" />
+    <ClInclude Include="src\Utilities\quartic.h" />
+    <ClInclude Include="src\Utilities\texture_saver.h" />
+    <ClInclude Include="src\Utilities\thread_pool.h" />
+    <ClInclude Include="src\Utilities\vmt_hook.h" />
+    <ClInclude Include="src\Utilities\w2s.h" />
+    <ClInclude Include="src\Utilities\xorstr.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\DirectXTK.lib" />
+    <Library Include="lib\fmt.lib" />
+    <Library Include="lib\freetype.lib" />
+    <Library Include="lib\g3log.lib" />
+    <Library Include="lib\minhook.x64.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
